@@ -1,4 +1,9 @@
-// SelectionSorter.java
+/*
+ * File Name: SelectionSorter.java
+ * Assignment: Lab 5 Exercise B
+ * Completed by: Jaskirat Singh (Jazz)
+ * Submission Date: 30 October 2024
+ */
 import java.util.ArrayList;
 
 /**
@@ -9,6 +14,7 @@ import java.util.ArrayList;
 public class SelectionSorter<E extends Number & Comparable<E>> implements Sorter<E> {
     @Override
     public void sort(ArrayList<Item<E>> items) {
+        // Got SelectionSorting algorithm from ENSF-694 work
         int n = items.size();
         for (int i = 0; i < n - 1; i++) {
             // Assume the min is the first element

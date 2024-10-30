@@ -2,7 +2,6 @@
  * M. Moussavi, October 2024
  *
  */
-
 class Item <E extends Number & Comparable<E> >{
     private E item;
     public Item(E value) {
